@@ -3,7 +3,7 @@ Contributors: goback2
 Donate link: https://wp-master.ir/
 Tags: enamad , shamed , enamad logo, shamed logo, WordPress enamad plugin, WordPress enamad , WordPress shamed plugin, WordPress shamed , Iran  , پلاگین اینماد وردپرس , پلاگین شامد وردپرس , شامد,اینماد,نماد
 Requires at least: 3.0
-Tested up to: 6.6.2
+Tested up to: 6.7.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -20,6 +20,8 @@ This plugin is licensed under the [Apache License, Version 2.0](http://www.apach
 
 
 == Changelog ==
+== 0.7.4 ==
+* small fix (نمایش خودکار با اینکه غیرفعال بود اما باز نمایش داده میشد.)
 == 0.7.3 ==
 * escape $title var in widget output
 == 0.7.2 ==

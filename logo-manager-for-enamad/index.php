@@ -5,7 +5,7 @@
  *Author: wp-master.ir
  *Author URI: http://wp-master.ir
  *Description:  جهت قراردادن خودکار لوگوی نماد الکترونیکی( اینماد ) در سایت| قابلیت کدکوتاه و ابزارک برای ای نماد | شامد | نماد های دیگر
- *Version: 0.7.3
+ *Version: 0.7.4
  */
 
 /*
@@ -20,7 +20,7 @@ $plugins_url = rtrim(plugin_dir_url(__FILE__), '/') . '/';
 define('_enamadlogo_DIR', dirname(__FILE__) . DIRECTORY_SEPARATOR);
 define('_enamadlogo_PATH', $plugins_url);
 define('_enamadlogo_BASENAME', plugin_basename(__FILE__));
-define('_enamadlogo_ver', '0.6');
+define('_enamadlogo_ver', '0.7.4');
 
 /**
  * fns

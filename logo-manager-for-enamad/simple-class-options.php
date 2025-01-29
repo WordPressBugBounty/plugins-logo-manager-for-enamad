@@ -67,6 +67,9 @@ class enamadlogo_Options
                         $settings[$k] = $v;
                     }
                 }
+                if (!isset($settings['enamad-enable'])) {
+                    $settings['enamad-enable'] = 0;
+                }
                 update_option('enamad_logo', $settings);
                 echo enamadlogo_msg_ok('تنظیمات ذخیره شدند');
 

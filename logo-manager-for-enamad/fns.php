@@ -87,6 +87,9 @@ function enamad_logo_html($_arg = array())
     extract($_arg);
     $ignore_replace_image = isset($ignore_replace_image) ? $ignore_replace_image : false;
     $settings = get_option('enamad_logo');
+    if (!isset($settings['enamad-enable'])) {
+        $settings['enamad-enable'] = 0;
+    }
     $replace_with_img_content = '<a target="_blank" href="' . get_bloginfo('url') . '/?show-enamad-logo=1"><img src="' . _enamadlogo_PATH . '/logo.png"  alt="enemad-logo" style="cursor:pointer" ></a>';
     if (!$_arg['is_widget']) {
         if (isset($settings['enamad-enable']) && $settings['enamad-enable'] != 1) {
@@ -268,14 +271,18 @@ function enamadlogo_hook_activate()
 
 }
 
-function enamadlogo_msg_error($msg){
+function enamadlogo_msg_error($msg)
+{
     echo '<div id="setting-error-settings_updated" class="notice notice-error settings-error is-dismissible"> 
-<p><strong>'.esc_html($msg).'</strong></p><button type="button" class="notice-dismiss"><span class="screen-reader-text">رد کردن این اخطار</span></button></div>';
+<p><strong>' . esc_html($msg) . '</strong></p><button type="button" class="notice-dismiss"><span class="screen-reader-text">رد کردن این اخطار</span></button></div>';
 }
-function enamadlogo_msg_ok($msg){
+
+function enamadlogo_msg_ok($msg)
+{
     echo '<div id="setting-error-settings_updated" class="notice notice-success settings-error is-dismissible"> 
 <p><strong>' . esc_html($msg) . '</strong></p><button type="button" class="notice-dismiss"><span class="screen-reader-text">رد کردن این اخطار</span></button></div>';
 }
+
 function enamadlogo_wp_kses($code)
 {
     return $code;
