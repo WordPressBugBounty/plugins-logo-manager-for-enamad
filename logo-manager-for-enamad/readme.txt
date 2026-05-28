@@ -1,10 +1,10 @@
-=== Logo Manager For Enamad ===
+=== Logo Manager For Enamad -  لوگوی نماد الکترونیکی ===
 Contributors: goback2
 Donate link: https://wp-master.ir/
-Tags: enamad , shamed , enamad logo, shamed logo, WordPress enamad plugin, WordPress enamad , WordPress shamed plugin, WordPress shamed , Iran  , پلاگین اینماد وردپرس , پلاگین شامد وردپرس , شامد,اینماد,نماد
+Tags: enamad, namad, shamed, شامد, اینماد
 Requires at least: 3.0
-Tested up to: 6.7.1
-Stable tag: trunk
+Tested up to: 7.0
+Stable tag: 0.7.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

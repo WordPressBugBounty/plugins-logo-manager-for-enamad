@@ -127,7 +127,7 @@ class enamadlogo_Options
                 <tr>
                     <th scope="row"><label for="enamad-width">عرض</label></th>
                     <td><input type="number" class="regular-text" name="enamad-width" id="enamad-width"
-                               value="<?php echo $settings['enamad-width']; ?>"></td>
+                               value="<?php echo (int)$settings['enamad-width']; ?>"></td>
                 </tr>
                 <tr>
                     <th scope="row"><label for="enamad-position">موقعیت قرارگیری</label></th>
